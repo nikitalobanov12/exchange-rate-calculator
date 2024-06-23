@@ -35,7 +35,7 @@ const CurrencyConverter: React.FC = () => {
     }, [amount, conversionRate]);
   
     return (
-      <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
+      <div className="max-w-md mx-auto mt-10 p-6 bg-slate-200 rounded-lg shadow-md">
         <h1 className="text-2xl font-bold mb-4 text-center">Currency Converter</h1>
         <div className="mb-4">
           <label className="block mb-2">
