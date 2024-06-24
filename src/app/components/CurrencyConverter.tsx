@@ -35,11 +35,11 @@ const CurrencyConverter: React.FC = () => {
     }, [amount, conversionRate]);
   
     return (
-      <div className="max-w-md mx-auto mt-10 p-6 bg-slate-200 rounded-lg shadow-md">
-        <h1 className="text-2xl font-bold mb-4 text-center">Currency Converter</h1>
+      <div className="max-w-xl mx-auto mt-10 p-6">
+        <h1 className="text-2xl text-gray-100 font-bold mb-4 text-center">Currency Converter</h1>
         <div className="mb-4">
           <label className="block mb-2">
-            <span className="text-gray-700">From:</span>
+            <span className="text-gray-200">From:</span>
             <select
               className="block w-full mt-1 p-2 border border-gray-300 rounded-md"
               value={fromCurrency}
@@ -55,7 +55,7 @@ const CurrencyConverter: React.FC = () => {
         </div>
         <div className="mb-4">
           <label className="block mb-2">
-            <span className="text-gray-700">To:</span>
+            <span className="text-gray-200">To:</span>
             <select
               className="block w-full mt-1 p-2 border border-gray-300 rounded-md"
               value={toCurrency}
@@ -71,7 +71,7 @@ const CurrencyConverter: React.FC = () => {
         </div>
         <div className="mb-4">
           <label className="block mb-2">
-            <span className="text-gray-700">Amount:</span>
+            <span className="text-gray-200">Amount:</span>
             <input
               type="number"
               className="block w-full mt-1 p-2 border border-gray-300 rounded-md"
@@ -81,7 +81,7 @@ const CurrencyConverter: React.FC = () => {
           </label>
         </div>
         <div className="text-center">
-          <h2 className="text-xl font-semibold">
+          <h2 className="text-xl font-semibold text-gray-100">
             Converted Amount: {convertedAmount.toFixed(2)} {toCurrency}
           </h2>
         </div>
